@@ -1,0 +1,6 @@
+{
+  "directory": "./src/entities",
+  "exclude" : [
+    "./src/entities/common"
+  ]
+}
