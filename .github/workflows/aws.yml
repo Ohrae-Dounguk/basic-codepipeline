@@ -34,7 +34,7 @@ jobs:
         run: |
           pwd
           touch .env
-          echo PORT=4000 >> .env          
+          echo PORT=5310 >> .env          
           cat .env
 
       - name: build server files
