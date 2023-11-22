@@ -24,3 +24,4 @@ artifacts:
     - package.json
     - package-lock.json
     - ecosystem.config.js
+    - scripts/*
