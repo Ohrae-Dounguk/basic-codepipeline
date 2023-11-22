@@ -3,4 +3,4 @@ REPOSITORY=/home/ubuntu/git/source
 
 cd $REPOSITORY
 
-yarn start
+yarn serve
