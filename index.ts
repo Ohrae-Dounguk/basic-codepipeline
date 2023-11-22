@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app: Application = express();
-const port = process.env.PORT || 5310;
+const port = process.env.PORT || 80;
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Welcome to Express & TypeScript Server Hello!');
