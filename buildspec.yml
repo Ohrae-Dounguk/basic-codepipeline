@@ -20,4 +20,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - demo.zip
+    - dist/**/*
+    - package.json
+    - package-lock.json
+    - ecosystem.config.js
