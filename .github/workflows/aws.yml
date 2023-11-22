@@ -46,7 +46,7 @@ jobs:
 ###################################### 추가된 부분 ######################################
 
       - name: zip file
-        run: zip -r demo.zip ./dist ./scripts ./appspec.yml ./.env ./package.json
+        run: zip -r demo.zip ./dist ./scripts ./appspec.yml ./.env ./ecosystem.config.js ./package.json
 
       - name: AWS configure credentials
         uses: aws-actions/configure-aws-credentials@v1
