@@ -60,7 +60,7 @@ jobs:
 
       - name: deploy with AWS codeDeploy
         run: aws deploy create-deployment
-          --application-name demo-codedeploy
+          --application-name codepipeline-demo-deploy-by-github
           --deployment-config-name CodeDeployDefault.OneAtATime
-          --deployment-group-name GROUP
+          --deployment-group-name deploygroup-codepipeline-by-github
           --s3-location bucket=zeroeyes-server-build,bundleType=zip,key=demo/deploy/demo.zip
