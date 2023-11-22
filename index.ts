@@ -8,9 +8,9 @@ const app: Application = express();
 const port = process.env.PORT || 5310;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to Express & TypeScript Server Hello!asdf');
+  res.send('Welcome to Express & TypeScript Server Hello!asdfTEST');
 });
 
 app.listen(port, () => {
-  console.log(`Server is Fired at http://localhost:${port}`);
+  console.log(`Server is Fireddddd at http://localhost:${port}`);
 });
