@@ -4,6 +4,8 @@ REPOSITORY=/home/ubuntu/git/source
 
 cd $REPOSITORY
 
+mkdir config
+
 aws ssm get-parameters-by-path --path /code_pipeline/development --query Parameters | \
 python3 -c '
 import json, sys
