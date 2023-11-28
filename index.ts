@@ -1,14 +1,11 @@
 import express, { Express, Request, Response , Application } from 'express';
-import dotenv from 'dotenv';
-
-//For env File 
-dotenv.config();
+import { env } from './env';
 
 const app: Application = express();
 const port = process.env.PORT || 5310;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send(`Welcome to Express & TypeScript Server Hello! ${process.env.API_PREFIX} HH`);
+  res.send(`Welcome to Express & TypeScript Server Hello! ${process.env.API_PREFIX} HH ${env.app.apiPrefix} DD`);
 });
 
 app.listen(port, () => {
